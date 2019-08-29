@@ -1,0 +1,404 @@
+@import'./base';
+@import './oregano/oregano';
+//about, skills i contact są sprawdzone także o wcięcie głębiej
+
+/* ================================== GENERAL ====================================== */
+
+
+$footer-bottom: 25px;
+$nav-top-margin: 85px;
+$link: #3F5488;
+$nav-height: 120px;
+$gr1: #ca8951;
+$gr2: #F2B887;
+html {width:100%; height:100%}
+    
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #000000;
+  background-color: $gr1;
+}
+.h-center{text-align:center;}
+.flex-h-center{display:flex; justify-content: center}
+.r-gr{background-image: linear-gradient(to right, $gr1, $gr2);}
+.l-gr{background-image: linear-gradient(to left, $gr1, $gr2);}
+.c-gr{background-image: linear-gradient(to center, $gr1, $gr2);}
+main > :not(:target) {
+  display: none;
+}
+
+
+li :first-child{ font-size: 1.5rem;}
+
+
+a   {
+ color: #000000;
+ text-decoration: none;
+ transition: color 0.5s;
+// cursor: url('cursor.png'),default;
+}
+
+
+
+.overlay {
+ 
+  visibility: hidden;
+  position: fixed;
+  width: 30vw;
+  opacity: 0;
+  transition: opacity 1s;
+  right: 3vw;
+  top: 3vw;
+  z-index: 0;
+  pointer-events: none;
+  
+  }
+
+.overlay.overlay-visible {
+  opacity: 1;
+  
+}
+.overlay.overlay-hidden{
+  opacity: 0;
+}
+
+.description {
+  visibility: hidden;
+  
+  
+  position: fixed;
+  width: 30vw;
+  
+  opacity: 0;
+  transition: opacity 1s;
+  right: 3vw;
+  top: 23vw;
+  z-index: 0;
+  font-size:2rem;
+  text-align: center;
+  color:$link;
+  pointer-events: none;}
+
+  .description.description-visible {
+    opacity: 1;
+    
+  }
+  .description.description-hidden{
+    opacity: 0;
+  }
+
+
+
+
+
+
+
+.frame {
+  
+  border:solid 5vmin #eee;
+  border-bottom-color:#fff;
+  border-left-color:#eee;
+  border-radius:2px;
+  border-right-color:#eee;
+  border-top-color:#ddd;
+  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+  box-sizing:border-box;
+
+  &:before {
+    border-radius:2px;
+    bottom:-2vmin;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+    content:"";
+    left:-2vmin;
+    position:absolute;
+    right:-2vmin;
+    top:-2vmin;
+  }
+  &:after {
+    border-radius:2px;
+    bottom:-2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    content:"";
+    left:-2.5vmin;
+    position:absolute;
+    right:-2.5vmin;
+    top:-2.5vmin;
+  }
+}
+
+
+/* ================================== nav stuff ==================================== */
+nav{
+  transform-origin: bottom left;
+  transform: rotate(90deg) translateX(-$nav-height);
+  position: fixed;
+  display: flex;
+  width: 100vh;
+  height:$nav-height;
+  top: 0;
+  padding-bottom: 1rem;
+  background-color: #999999;
+  & article { margin-top: $nav-top-margin;
+    
+    }
+  
+  }  
+  
+
+#home{
+  margin: $nav-top-margin 0 0 1rem;
+}
+.name{
+  margin-left: 10vh;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  }
+#line{
+margin-right:  20px;
+
+}
+
+/* ==================== project nav styles =========================== */
+
+
+
+/* ===================== project links styles ============================= */
+.home-page {
+  margin: 0 0 40px $nav-top-margin;
+  line-height: 1.2;
+  padding: 0 0 5px 50px;
+  border-width: 100px;
+  line-height: 1.6;
+  
+}
+
+.hovercontroll{font-size: 4vw;}
+
+footer{
+ right: 20px;
+  position: fixed;
+  bottom: 20px;
+  }
+ footer a {
+ display: inline-block;
+ padding: 0 0 30px 10px;
+ transform-origin: top right;
+ transform: rotate(60deg);
+ position: absolute;
+}
+footer a:hover {
+  color:$link;
+}
+
+#github {
+  right: 10px;
+  bottom: -40px;
+}
+#facebook{
+  right: 55px;
+  bottom: -40px;
+}
+
+/* =============================== responsive ==================================== */
+
+@media(max-width: 775px) {
+/* these styles will be applied to both section and header   */
+
+.name{  margin-left: 10vh;}
+
+li :first-child{ font-size: 16px;}
+.home-page{    
+    font-size: 100px;
+    line-height: 1.3; 
+ 
+  }
+.overlay {
+ 
+  width:100%;
+  top:0;
+  right:0;
+  }
+
+.description{
+  z-index: 1000;
+  top:0;
+  right:0;
+  width:100%;
+  height:62.5vw;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color: #FE001A;
+  }
+  
+  
+  #nav{
+  
+  background:transparent;
+ 
+ }
+
+footer{
+    font-size: 14px;
+    color: #000000;
+  }
+}
+
+@media(max-width:414px){
+  .home-page{
+    font-size: 48px;
+    padding: 35px 0 0 0px;
+  }
+  
+}
+
+@media(max-width: 376px){
+  
+  .home-page{
+    font-size: 48px;
+    padding: 35px 0 0 0px;
+  }
+}
+
+@media(max-width: 320px){
+  
+  .home-page {
+    font-size: 42px;
+    padding: 35px 0 0 0px;
+  }
+  
+  footer {
+    display: none;
+  }
+}
+
+.about {letter-spacing: 1px;}
+.about h3 {
+  
+  font-size: 4vw;
+  line-height: 1.2;
+  padding: 50px 0 5px 150px;
+ 	border-width: 100px;
+}
+
+.about p {
+  margin: 0 0 20px 8px;
+  line-height: 1.5;
+  padding: 1vh 50px 5px 150px;
+ 	border-width: 100px;
+  font-weight: 100;
+  color: #000;
+}
+
+.about li :not(:first-child) {margin: 0 0 0 3vw; border:none;}
+.lgrad{background-image: linear-gradient(to left,$gr1, $gr2);}
+.rgrad{background-image: linear-gradient(to right,$gr1, $gr2);}
+.cgrad{background-image: linear-gradient(to right,$gr1, $gr2);}
+
+.coded h3 {
+
+  color: #41240d;
+  float: left;
+  text-align: left;
+  font-size: 12px;
+  width: 300px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 50px 0px 30px 150px;
+}
+
+.about-links {
+  line-height: 1.8;
+  margin: 8px 0 10px 0;
+}
+
+.about a {
+  color: #41240d;
+  transition: color 0.5s;
+  display: inline-block;
+  &:hover{color: $link}
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column2 {
+    float: left;
+    width: 33.33%;
+}
+.full-column{ width: 100%;}
+
+
+/* Clear floats after the columns */
+.about:after {
+    content:"";
+    display: table;
+    clear: both;
+  
+}
+
+
+  
+  @media screen and (max-width: 775px) {
+    .column {
+        width: 100%;
+    }
+    .column2 {
+        width: 100%;
+    }
+    body{
+      background-color: #ca8951;
+    }
+    
+    .about h3{
+      font-size: 8vh;
+    }
+    .about a{
+      
+      font-size: 14px;
+      padding: 5px 0 0 0;
+      margin:0 ;
+    }
+    .about p{
+      
+      padding-left: 50px;
+      
+    }
+
+} 
+
+  @media screen and (max-width: 422px) {
+  
+    p{
+      font-size: 14px;
+      line-height: 1;
+      
+      
+    }
+      .about h3{
+      font-size: 42px;
+        padding: 40px 0 0 45x;
+    }
+    .about a {
+      font-size: 14px;
+      
+    }
+} 
+
+.home {
+font-family: 'oreganoitalic';
+min-height:100vh;
+font-size: calc(2vw + 4vh);
+font-weight: bold;
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+& p{font-size: calc(2vw + 4vh); margin-top: calc(2vw + 4vh)} }
+
+/* ================================== PROJECT STYLES ============================= */
+
