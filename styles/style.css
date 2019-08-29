@@ -257,11 +257,12 @@ nav article {
 /* ==================== project nav styles =========================== */
 /* ===================== project links styles ============================= */
 .home-page {
-  margin: 0 0 40px 85px;
+  margin: 0 0 0 85px;
   line-height: 1.2;
   padding: 0 0 5px 50px;
   border-width: 100px;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 .hovercontroll {
@@ -436,6 +437,7 @@ footer a:hover {
 .column {
   float: left;
   width: 50%;
+  min-height: 100vh;
 }
 
 .column2 {

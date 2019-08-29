@@ -35,12 +35,12 @@ mixin Footer
 
 mixin About   
     #About.about
-        .column
+        .column.r-gr
             h3 About
             p #{texts.about1}
             p #{texts.about2}
             p #{texts.about3}
-        .column
+        .column.l-gr
             h3 Contact
             p #{texts.contact1}
                 a(href="mailto:piotrmaksymiuk@yahoo.com.com") #{texts.contact2}
@@ -83,12 +83,8 @@ mixin Home
         p.left Piotr Maksymiuk
         p.right Web-Developer in spe
         
-            
-
- 
-
 mixin Projects
-    .home-page(ID ="Projects")
+    .home-page.r-gr(ID ="Projects")
         .overlay.frame(style='visibility: hidden;')
             img(src='6overlay.gif')
         .description
