@@ -13,14 +13,14 @@ mixin Head
     title Piotr Maksymiuk portfolio
 
 mixin NavigationBar
-    nav(id='nav')
+    nav
         article#home
             a(href='#Home')  home 
-        article#name(class = 'name')
+        article#name
             a(href='#About')  Piotr Maksymiuk 
-        article#skills(class ='name')
+        article#skills
             a(href='#Skills') skills
-        article#projects(class ='name')
+        article#projects
             a(href='#Projects') projects
 
 mixin Works
@@ -58,28 +58,30 @@ mixin Skills
             h3 Skills
             ul
                 li(class ='r-gr')
-                    p #{texts.skill1}
-                    p HTML
-                    p CSS, SCSS
-                    p JS
-                    p React.js
+                    p.right #{texts.skill1}
+                    p.left HTML
+                    p.left CSS, SCSS
+                    p.left JS
+                    p.left React.js
 
                 li(class ='l-gr')
-                    p #{texts.skill2}
-                    p Redux
-                    p Styled Components
-                    p Linux
-                    p jQuery
-                    p Bootstrap
+                    p.right #{texts.skill2}
+                    p.left Redux
+                    p.left Styled Components
+                    p.left Linux
+                    p.left jQuery
+                    p.left Bootstrap
 
                 li(class ='r-gr')
-                    p #{texts.skill3}
-                    p Gulp
-                    p Webpack
-                    p more advanced node.js issues
-                    p SQL - that is precisely what I do study now
+                    p.right #{texts.skill3}
+                    p.left Gulp
+                    p.left Webpack
+                    p.left more advanced node.js issues
+                    p.left SQL - that is precisely what I do study now
 mixin Home
     #Home.home.r-gr
+        img.home__foto(alt = 'author foto' src ='./project_images/foto1.png')
+
         p.left Piotr Maksymiuk
         p.right Web-Developer in spe
         
