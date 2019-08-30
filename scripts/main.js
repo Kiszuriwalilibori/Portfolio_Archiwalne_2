@@ -70,14 +70,14 @@
 
 
 document.addEventListener("DOMContentLoaded", function(){
-  console.log('loaded');
+  
     var hoverControls = document.querySelectorAll(".hovercontroll");
     var overlay = document.querySelector(".overlay");
     var overlayImage = overlay.querySelector("img");
     var description = document.querySelector('.description');
     var timeout=null;
 
-    for(var i=0; i<hoverControls.length; i++){console.log('add',hoverControls.length);
+    for(var i=0; i<hoverControls.length; i++){
       hoverControls[i].addEventListener("mouseover", function(e){
         if(timeout){
           clearTimeout(timeout);
