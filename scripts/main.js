@@ -86,7 +86,6 @@ document.addEventListener("DOMContentLoaded", function(){
         overlayImage.src = e.target.getAttribute("data-overlay");
         overlay.style.visibility = "visible";
         overlay.classList.add("overlay-visible");
-        console.log(e.target);
         description.style.visibility = "visible";
         description.classList.add("description-visible");
         description.innerHTML= e.target.getAttribute("data-description");
