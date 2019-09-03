@@ -70,15 +70,15 @@
 
 
 document.addEventListener("DOMContentLoaded", function(){
-  
+  if (!('ontouchstart' in document.documentElement)){
     var hoverControls = document.querySelectorAll(".hovercontroll");
     var overlay = document.querySelector(".overlay");
     var overlayImage = overlay.querySelector("img");
     var description = document.querySelector('.description');
     var timeout=null;
 
-    for(var i=0; i<hoverControls.length; i++){
-      hoverControls[i].addEventListener("mouseover", function(e){
+    for(var i=0; i<hoverControls.length; i++){console.log('added');
+      hoverControls[i].addEventListener("mouseover", function(e){console.log('mouseover');
         if(timeout){
           clearTimeout(timeout);
         }
@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function(){
         
       });
     }
+  }
   window.location.hash ='Home';
   sidekick('left','fancy-l');
   sidekick('right','fancy-r');
