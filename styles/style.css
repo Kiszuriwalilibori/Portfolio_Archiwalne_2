@@ -151,6 +151,21 @@ a {
   background-image: linear-gradient(to center, #ca8951, #F2B887);
 }
 
+.skill_r-gr {
+  background-image: -webkit-gradient(linear, left top, right top, from(#DDB76B), to(#FFEDCA));
+  background-image: linear-gradient(to right, #DDB76B, #FFEDCA);
+}
+
+.skill_l-gr {
+  background-image: -webkit-gradient(linear, right top, left top, from(#FFCACA), to(#FFA3A3));
+  background-image: linear-gradient(to left, #FFCACA, #FFA3A3);
+}
+
+.skill_n-gr {
+  background-image: -webkit-gradient(linear, right top, left top, from(#DD9F6B), to(#FFE2CA));
+  background-image: linear-gradient(to left, #DD9F6B, #FFE2CA);
+}
+
 li :first-child {
   font-size: 1.5rem;
 }
@@ -202,7 +217,7 @@ li :first-child {
   z-index: 0;
   font-size: 2rem;
   text-align: center;
-  color: #3F5488;
+  color: #9ec684;
   pointer-events: none;
 }
 
@@ -370,7 +385,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #3F5488;
+  color: #9ec684;
 }
 
 #github {
@@ -429,7 +444,7 @@ footer a:hover {
 
 .about p {
   margin: 0 0 20px 8px;
-  line-height: 1.5;
+  line-height: 1.2;
   padding: 1vh 50px 5px 150px;
   border-width: 100px;
   font-weight: 100;
@@ -488,7 +503,7 @@ footer a:hover {
 }
 
 .about a:hover {
-  color: #3F5488;
+  color: #9ec684;
 }
 
 @media (max-width: 775px) {

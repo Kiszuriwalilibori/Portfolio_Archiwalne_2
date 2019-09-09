@@ -9,11 +9,24 @@
 $footer-bottom: 25px;
 $nav-top-margin: 85px;
 $nav-top-margin-mobile:30px;
-$link: #3F5488;
+//$link: #3F5488;
+$link: #9ec684;
 $nav-height: 120px;
 $nav-height-mobile: 50px;
+//$bgr1:#ca8951;
+
 $gr1: #ca8951;
 $gr2: #F2B887;
+
+$gr3:#DDB76B;
+$gr4:#FFEDCA;
+
+$gr5: #FFA3A3;
+$gr6: #FFCACA;
+
+$gr7:#DD9F6B;
+$gr8:#FFE2CA;
+
 
 $nav-color:#F2B887;
 $nav-color: #9EC684;
@@ -42,7 +55,7 @@ body {
   font-size: 18px;
   letter-spacing: 2px;
   color: #000000;
-  background-color: $gr1;
+  background-color: #ca8951;
 }
 main > :not(:target) {
   display: none;
@@ -62,6 +75,9 @@ a {
 .l-gr{background-image: linear-gradient(to left, $gr1, $gr2);}
 .c-gr{background-image: linear-gradient(to center, $gr1, $gr2);}
 
+.skill_r-gr{background-image: linear-gradient(to right, $gr3, $gr4);}
+.skill_l-gr{background-image: linear-gradient(to left, $gr6, $gr5);}
+.skill_n-gr{background-image: linear-gradient(to left, $gr7, $gr8);}
 
 li :first-child{ font-size: 1.5rem;@include mobile{font-size: 16px;}}
 .overlay {
@@ -290,7 +306,8 @@ footer a:hover {
 
 .about p {
   margin: 0 0 20px 8px;
-  line-height: 1.5;
+  //line-height: 1.5;
+  line-height: 1.2;
   padding: 1vh 50px 5px 150px;
  	border-width: 100px;
   font-weight: 100;
