@@ -217,7 +217,7 @@ li :first-child {
   z-index: 0;
   font-size: 2rem;
   text-align: center;
-  color: #9ec684;
+  color: black;
   pointer-events: none;
 }
 

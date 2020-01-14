@@ -55,18 +55,6 @@
   }
     
     
-  
-
-  
-
-
-
-
-
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -77,11 +65,10 @@ document.addEventListener("DOMContentLoaded", function(){
     var description = document.querySelector('.description');
     var timeout=null;
 
-    for(var i=0; i<hoverControls.length; i++){console.log('added');
-      hoverControls[i].addEventListener("mouseover", function(e){console.log('mouseover');
-        if(timeout){
-          clearTimeout(timeout);
-        }
+    for(var i=0; i<hoverControls.length; i++){
+      hoverControls[i].addEventListener("mouseover", function(e){
+        
+        timeout && clearTimeout(timeout);
         overlayImage.src = "";
         overlayImage.src = e.target.getAttribute("data-overlay");
         overlay.style.visibility = "visible";
