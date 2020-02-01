@@ -2,6 +2,7 @@
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
+//
 
 It is - as title says - my AboutMe page
 
@@ -46,7 +47,5 @@ It is - as title says - my AboutMe page
 - minor styling enhancement
 - orts in project descriptions corrected
 ### To do
-
-- in mobile view with mobile menu open the section called from menu locates itself upto viewport and not menu frame
 
 - there is a bug with viewport width changing. Script for hover on project images doesn't work properly on mobiles. Then I developed other solution to handle hover just on mobiles, which works if page is just initially open in mobile, while if someone change the viewport width during sesion the page needs refresh to hover properly.

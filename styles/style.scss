@@ -90,6 +90,7 @@ li :first-child{ font-size: 1.5rem;@include mobile{font-size: 16px;}}
   top: 3vw;
   z-index: 0;
   pointer-events: none;
+  
 
   @include mobile {
     width: 100%;
@@ -119,6 +120,7 @@ li :first-child{ font-size: 1.5rem;@include mobile{font-size: 16px;}}
   text-align: center;
   color: black;
   pointer-events: none;
+
 @include mobile {z-index: 1000;
   top:0;
   right:0;
@@ -151,6 +153,7 @@ li :first-child{ font-size: 1.5rem;@include mobile{font-size: 16px;}}
   border-top-color:#ddd;
   box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
   box-sizing:border-box;
+  
 
   &:before {
     border-radius:2px;
@@ -236,6 +239,7 @@ footer{
   right: 20px;
   position: fixed;
   bottom: 20px;
+
   @include mobile{font-size: 14px;
     color: #000000;}
 
@@ -247,6 +251,7 @@ footer{
  transform-origin: top right;
  transform: rotate(60deg);
  position: absolute;
+ cursor: url('../project_images/cursor.png'),default;
 }
 footer a:hover {
   color:$link;

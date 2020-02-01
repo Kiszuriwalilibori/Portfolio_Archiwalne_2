@@ -382,6 +382,7 @@ footer a {
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
   position: absolute;
+  cursor: url("../project_images/cursor.png"), default;
 }
 
 footer a:hover {

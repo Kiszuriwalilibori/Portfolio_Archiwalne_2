@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function(){
         description.style.visibility = "visible";
         description.classList.add("description-visible");
         description.innerHTML= e.target.getAttribute("data-description");
+       
         
       });
       hoverControls[i].addEventListener("mouseout", function(e){
