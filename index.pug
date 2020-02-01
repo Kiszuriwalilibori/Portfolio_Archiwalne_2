@@ -23,7 +23,7 @@ mixin NavigationBar
 
 mixin Works
     each project in Projects
-        a.hovercontroll(href = project.link data-overlay = project.datasrc data-offset = '50px' data-description = project.text ) #{project.alt}
+        a.hovercontroll(href = project.link data-overlay = project.datasrc data-offset = '50px' data-description = project.text target = "_blank" ) #{project.alt}
         br
 
 mixin Footer
