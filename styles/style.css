@@ -123,6 +123,10 @@ a {
   cursor: url("../project_images/cursor.png"), default;
 }
 
+a:focus, a:active {
+  outline: none;
+}
+
 .h-center {
   text-align: center;
 }

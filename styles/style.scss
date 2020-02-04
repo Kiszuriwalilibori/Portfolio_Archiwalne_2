@@ -69,6 +69,8 @@ a {
   cursor: url('../project_images/cursor.png'),default;
  }
  
+a:focus, a:active {outline:none;}
+
 .h-center{text-align:center;}
 .flex-h-center{display:flex; justify-content: center}
 .r-gr{background-image: linear-gradient(to right, $gr1, $gr2);}
