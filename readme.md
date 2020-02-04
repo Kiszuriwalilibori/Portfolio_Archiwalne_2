@@ -46,6 +46,11 @@ It is - as title says - my AboutMe page
 #### 3
 - minor styling enhancement
 - orts in project descriptions corrected
+
+#### 4
+- projects open in new windows
+- no dotted line around active links
+
 ### To do
 
 - there is a bug with viewport width changing. Script for hover on project images doesn't work properly on mobiles. Then I developed other solution to handle hover just on mobiles, which works if page is just initially open in mobile, while if someone change the viewport width during sesion the page needs refresh to hover properly.
