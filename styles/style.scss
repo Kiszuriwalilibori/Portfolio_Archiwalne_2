@@ -1,6 +1,6 @@
 @import'./base';
 @import './oregano/oregano';
-@import './Noto/noto';
+@import './noto/noto';
 
 
 /* ================================== GENERAL ====================================== */
@@ -9,11 +9,11 @@
 $footer-bottom: 25px;
 $nav-top-margin: 85px;
 $nav-top-margin-mobile:30px;
-//$link: #3F5488;
+
 $link: #9ec684;
 $nav-height: 120px;
 $nav-height-mobile: 50px;
-//$bgr1:#ca8951;
+
 
 $gr1: #ca8951;
 $gr2: #F2B887;
@@ -50,8 +50,9 @@ $breakMobile: 776px;
 html {width:100%; height:100%}
   
 body {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-family: 'noto_sans_kr_regularregular', sans-serif;
+  // font-family: 'Noto Sans KR', sans-serif;
+  // font-family: 'noto_sans_kr_regularregular', sans-serif;
+  font-family: 'notoregular';
   font-size: 18px;
   letter-spacing: 2px;
   color: #000000;
