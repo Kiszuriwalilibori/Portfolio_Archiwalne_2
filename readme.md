@@ -4,13 +4,13 @@
 
 //
 
-It is - as title says - my AboutMe page
+It is - as title says - my Portfolio Page
 
 
 # The objective
 
   - let people know about me
-  - present my skills
+  - inform about my skills
   - present my projects
   - act as playground for new techs and skills
 
@@ -18,7 +18,6 @@ It is - as title says - my AboutMe page
  - HTML 5.2
  - SASS/SCSS
  - JS
- - Bootstrap
  - PUG
 
 
@@ -51,6 +50,11 @@ It is - as title says - my AboutMe page
 - projects open in new windows
 - no dotted line around active links
 
+#### 4
+- buggy font declaration modified
+- neta name added
+
+
 ### To do
 
-- there is a bug with viewport width changing. Script for hover on project images doesn't work properly on mobiles. Then I developed other solution to handle hover just on mobiles, which works if page is just initially open in mobile, while if someone change the viewport width during sesion the page needs refresh to hover properly.
+- while it displays properly with Chrome, with Audits it makes problems to load styles
