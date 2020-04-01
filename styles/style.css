@@ -101,14 +101,17 @@ input, textarea, select {
 html {
   width: 100%;
   height: 100%;
+  background: url("../project_images/moon.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 body {
   font-family: 'notoregular';
   font-size: 18px;
   letter-spacing: 2px;
-  color: #000000;
-  background-color: #ca8951;
+  color: #F5A801;
+  cursor: url("../project_images/cursor2.png"), default;
+  background-color: transparent;
 }
 
 main > :not(:target) {
@@ -116,11 +119,11 @@ main > :not(:target) {
 }
 
 a {
-  color: #000000;
+  color: inherit;
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
-  cursor: url("../project_images/cursor.png"), default;
+  cursor: url("../project_images/cursor2.png"), default;
 }
 
 a:focus, a:active {
@@ -138,36 +141,6 @@ a:focus, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.r-gr {
-  background-image: -webkit-gradient(linear, left top, right top, from(#ca8951), to(#F2B887));
-  background-image: linear-gradient(to right, #ca8951, #F2B887);
-}
-
-.l-gr {
-  background-image: -webkit-gradient(linear, right top, left top, from(#ca8951), to(#F2B887));
-  background-image: linear-gradient(to left, #ca8951, #F2B887);
-}
-
-.c-gr {
-  background-image: -webkit-gradient(linear, center, from(#ca8951), to(#F2B887));
-  background-image: linear-gradient(to center, #ca8951, #F2B887);
-}
-
-.skill_r-gr {
-  background-image: -webkit-gradient(linear, left top, right top, from(#DDB76B), to(#FFEDCA));
-  background-image: linear-gradient(to right, #DDB76B, #FFEDCA);
-}
-
-.skill_l-gr {
-  background-image: -webkit-gradient(linear, right top, left top, from(#FFCACA), to(#FFA3A3));
-  background-image: linear-gradient(to left, #FFCACA, #FFA3A3);
-}
-
-.skill_n-gr {
-  background-image: -webkit-gradient(linear, right top, left top, from(#DD9F6B), to(#FFE2CA));
-  background-image: linear-gradient(to left, #DD9F6B, #FFE2CA);
 }
 
 li :first-child {
@@ -221,7 +194,6 @@ li :first-child {
   z-index: 0;
   font-size: 2rem;
   text-align: center;
-  color: black;
   pointer-events: none;
 }
 
@@ -304,13 +276,13 @@ nav {
   height: 120px;
   top: 0;
   padding-bottom: 1rem;
-  background-color: #9EC684;
+  background-color: rgba(131, 131, 131, 0.5);
 }
 
 @media (max-width: 775px) {
   nav {
     background: transparent;
-    background: #9EC684;
+    background: rgba(131, 131, 131, 0.5);
     height: 50px;
     -webkit-transform: rotate(90deg) translateX(-50px);
             transform: rotate(90deg) translateX(-50px);
@@ -369,12 +341,12 @@ footer {
   right: 20px;
   position: fixed;
   bottom: 20px;
+  color: #7ac221;
 }
 
 @media (max-width: 775px) {
   footer {
     font-size: 14px;
-    color: #000000;
   }
 }
 
@@ -386,7 +358,6 @@ footer a {
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
   position: absolute;
-  cursor: url("../project_images/cursor.png"), default;
 }
 
 footer a:hover {
@@ -404,28 +375,8 @@ footer a:hover {
 }
 
 /* =============================== responsive ==================================== */
-@media (max-width: 414px) {
-  .home-page {
-    font-size: 48px;
-    padding: 35px 0 0 0px;
-  }
-}
-
-@media (max-width: 376px) {
-  .home-page {
-    font-size: 48px;
-    padding: 35px 0 0 0px;
-  }
-}
-
-@media (max-width: 320px) {
-  .home-page {
-    font-size: 42px;
-    padding: 35px 0 0 0px;
-  }
-  footer {
-    display: none;
-  }
+footer {
+  display: none;
 }
 
 .about {
@@ -453,7 +404,6 @@ footer a:hover {
   padding: 1vh 50px 5px 150px;
   border-width: 100px;
   font-weight: 100;
-  color: #000;
 }
 
 @media (max-width: 775px) {
@@ -501,7 +451,7 @@ footer a:hover {
 }
 
 .about a {
-  color: #41240d;
+  color: #7ac221;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   display: inline-block;
@@ -599,21 +549,6 @@ footer a:hover {
   .column2 {
     width: 100%;
   }
-  body {
-    background-color: #ca8951;
-  }
-  /*
-    .about a{
-      
-      font-size: 14px;
-      padding: 5px 0 0 0;
-      margin:0 ;
-    }*/
-  /*.about p{
-      
-      padding-left: 50px;
-      
-    }*/
 }
 
 @media screen and (max-width: 422px) {

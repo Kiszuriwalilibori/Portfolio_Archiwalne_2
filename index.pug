@@ -8,6 +8,7 @@ mixin Head
         meta(name='Piotr Maksymiuk Portfolio')
         meta(http-equiv='X-UA-Compatible' content='ie=edge')
         link(rel='stylesheet' href='./styles/style.css')
+        link(rel="icon" href="./project_images/foto1.png")
         script(src='./scripts/main.js' defer)
         title Piotr Maksymiuk portfolio
 
@@ -76,17 +77,17 @@ mixin Skills
                     p.left Linux
                     p.left Bootstrap
 
-                li(class ='r-gr')
+                li(class ='skill_r-gr')
                     p.right #{texts.skill3}
                     p.left advanced node.js features
                     p.left SQL
                     p.left PHP
 mixin Home
     #Home.home.r-gr
-        img.home__foto(alt = 'author foto' src ='./project_images/foto1.png')
+        //- img.home__foto(alt = 'author foto' src ='./project_images/foto1.png')
 
         p.left Piotr Maksymiuk
-        p.right Web-Developer in spe
+        p.right Web-Developer
         
 mixin Projects
     .home-page.r-gr(ID ="Projects")

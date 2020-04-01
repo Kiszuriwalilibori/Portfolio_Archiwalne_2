@@ -28,8 +28,12 @@ $gr7:#DD9F6B;
 $gr8:#FFE2CA;
 
 
-$nav-color:#F2B887;
-$nav-color: #9EC684;
+$nav-color:rgba(131,131,131,0.5);
+
+
+$text-color:#F5A801;
+$text-color-bis:rgb(122, 194, 33);
+
 $breakMobile: 776px;
 
 @mixin mobile {
@@ -47,16 +51,19 @@ $breakMobile: 776px;
 
 
 
-html {width:100%; height:100%}
+html {width:100%; height:100%;
+  background: url('../project_images/moon.jpg') no-repeat center center fixed; 
+  background-size: cover;
+}
   
 body {
-  // font-family: 'Noto Sans KR', sans-serif;
-  // font-family: 'noto_sans_kr_regularregular', sans-serif;
+  
   font-family: 'notoregular';
   font-size: 18px;
   letter-spacing: 2px;
-  color: #000000;
-  background-color: #ca8951;
+  color: $text-color;
+  cursor: url('../project_images/cursor2.png'),default;
+  background-color: transparent;
 }
 main > :not(:target) {
   display: none;
@@ -64,23 +71,23 @@ main > :not(:target) {
 
 
 a {
-  color: #000000;
+  color: inherit;
   text-decoration: none;
   transition: color 0.5s;
-  cursor: url('../project_images/cursor.png'),default;
+  cursor: url('../project_images/cursor2.png'),default;
  }
  
 a:focus, a:active {outline:none;}
 
 .h-center{text-align:center;}
 .flex-h-center{display:flex; justify-content: center}
-.r-gr{background-image: linear-gradient(to right, $gr1, $gr2);}
-.l-gr{background-image: linear-gradient(to left, $gr1, $gr2);}
-.c-gr{background-image: linear-gradient(to center, $gr1, $gr2);}
+// .r-gr{/*background-image: linear-gradient(to right, $gr1, $gr2);*/color:inherit;}
+// .l-gr{}
+// .c-gr{}
 
-.skill_r-gr{background-image: linear-gradient(to right, $gr3, $gr4);}
-.skill_l-gr{background-image: linear-gradient(to left, $gr6, $gr5);}
-.skill_n-gr{background-image: linear-gradient(to left, $gr7, $gr8);}
+// .skill_r-gr{margin-left:$nav-height;background-image: linear-gradient(to right, rgba(131,131,131,0.5), rgba(131,131,131,0.1));}
+// .skill_l-gr{margin-left:$nav-height;background-image: linear-gradient(to right, rgba(131,131,131,0.1),rgba(131,131,131,0.5));}
+// .skill_n-gr{background-image: linear-gradient(to left, $gr7, $gr8);}
 
 li :first-child{ font-size: 1.5rem;@include mobile{font-size: 16px;}}
 .overlay {
@@ -121,7 +128,7 @@ li :first-child{ font-size: 1.5rem;@include mobile{font-size: 16px;}}
   z-index: 0;
   font-size:2rem;
   text-align: center;
-  color: black;
+  //padding:20px, 2px, 0, 2px;
   pointer-events: none;
 
 @include mobile {z-index: 1000;
@@ -242,9 +249,8 @@ footer{
   right: 20px;
   position: fixed;
   bottom: 20px;
-
-  @include mobile{font-size: 14px;
-    color: #000000;}
+  color: $text-color-bis;
+  @include mobile{font-size: 14px;}
 
   }
 
@@ -254,7 +260,6 @@ footer{
  transform-origin: top right;
  transform: rotate(60deg);
  position: absolute;
- cursor: url('../project_images/cursor.png'),default;
 }
 footer a:hover {
   color:$link;
@@ -269,36 +274,36 @@ footer a:hover {
   bottom: -40px;
 }
 
-
+.projects-container{}
 
 /* =============================== responsive ==================================== */
 
-@media(max-width:414px){
-  .home-page{
-    font-size: 48px;
-    padding: 35px 0 0 0px;
-  }
+// @media(max-width:414px){
+//   .home-page{
+//     font-size: 48px;
+//     padding: 35px 0 0 0px;
+//   }
   
-}
-@media(max-width: 376px){
+// }
+// @media(max-width: 376px){
   
-  .home-page{
-    font-size: 48px;
-    padding: 35px 0 0 0px;
-  }
-}
+//   .home-page{
+//     font-size: 48px;
+//     padding: 35px 0 0 0px;
+//   }
+// }
 
-@media(max-width: 320px){
+// @media(max-width: 320px){
   
-  .home-page {
-    font-size: 42px;
-    padding: 35px 0 0 0px;
-  }
+//   .home-page {
+//     font-size: 42px;
+//     padding: 35px 0 0 0px;
+//   }
   
   footer {
     display: none;
   }
-}
+//}
 
 .about {letter-spacing: 1px; min-height: 100vh;}
 
@@ -314,12 +319,10 @@ footer a:hover {
 
 .about p {
   margin: 0 0 20px 8px;
-  //line-height: 1.5;
   line-height: 1.2;
   padding: 1vh 50px 5px 150px;
  	border-width: 100px;
   font-weight: 100;
-  color: #000;
   @include mobile { padding-left: 50px;}
 }
 
@@ -346,7 +349,7 @@ footer a:hover {
 }
 
 .about a {
-  color: #41240d;
+  color: $text-color-bis;
   transition: color 0.5s;
   display: inline-block;
   &:hover{color: $link}
@@ -418,22 +421,7 @@ footer a:hover {
     .column2 {
         width: 100%;
     }
-    body{
-      background-color: #ca8951;
-    }
-    /*
-    .about a{
-      
-      font-size: 14px;
-      padding: 5px 0 0 0;
-      margin:0 ;
-    }*/
-    /*.about p{
-      
-      padding-left: 50px;
-      
-    }*/
-
+    
 } 
 
   @media screen and (max-width: 422px) {
