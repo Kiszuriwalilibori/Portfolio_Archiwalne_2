@@ -132,6 +132,9 @@ a:focus, a:active {
 
 .h-center {
   text-align: center;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 
 .flex-h-center {
@@ -213,7 +216,6 @@ li :first-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #FE001A;
   }
 }
 
@@ -298,7 +300,7 @@ nav article {
 
 @media (max-width: 775px) {
   nav article {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
@@ -308,12 +310,18 @@ nav article {
 
 @media (max-width: 775px) {
   #home {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
 #line {
   margin-right: 20px;
+}
+
+.neon {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 
 /* ===================== project links styles ============================= */
@@ -328,7 +336,7 @@ nav article {
 
 @media (max-width: 775px) {
   .home-page {
-    font-size: 50px;
+    font-size: calc(2vw + 3vh);
     line-height: 1.3;
   }
 }
@@ -341,7 +349,9 @@ footer {
   right: 20px;
   position: fixed;
   bottom: 20px;
-  color: #7ac221;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 
 @media (max-width: 775px) {
@@ -374,11 +384,13 @@ footer a:hover {
   bottom: -40px;
 }
 
-/* =============================== responsive ==================================== */
-footer {
-  display: none;
+@media (max-width: 775px) {
+  .projects-container {
+    padding-top: 62.5vw;
+  }
 }
 
+/* =============================== responsive ==================================== */
 .about {
   letter-spacing: 1px;
   min-height: 100vh;
@@ -389,6 +401,7 @@ footer {
   line-height: 1.2;
   padding: 50px 0 5px 150px;
   border-width: 100px;
+  text-align: center;
 }
 
 @media (max-width: 775px) {
@@ -401,7 +414,7 @@ footer {
 .about p {
   margin: 0 0 20px 8px;
   line-height: 1.2;
-  padding: 1vh 50px 5px 150px;
+  padding: 1vh 10px 5px 150px;
   border-width: 100px;
   font-weight: 100;
 }
@@ -413,7 +426,8 @@ footer {
 }
 
 .about li :not(:first-child) {
-  margin: 0 0 0 3vw;
+  margin: 0 0 0 calc(50vw - 50px);
+  padding: 1vh;
   border: none;
 }
 
@@ -432,26 +446,12 @@ footer {
   background-image: linear-gradient(to right, #ca8951, #F2B887);
 }
 
-/*
-.coded h3 {
-
-  color: #41240d;
-  float: left;
-  text-align: left;
-  font-size: 12px;
-  width: 300px;
-  line-height: 1.5;
-  font-weight: 400;
-  margin: 50px 0px 30px 150px;
-}
-*/
 .about-links {
   line-height: 1.8;
   margin: 8px 0 10px 0;
 }
 
 .about a {
-  color: #7ac221;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   display: inline-block;

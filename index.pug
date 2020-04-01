@@ -23,10 +23,22 @@ mixin NavigationBar
         article#projects
             a(href='#Projects') projects
 
+//- mixin Works
+//-     each project in Projects
+//-         a.hovercontroll(href = project.link data-overlay = project.datasrc data-offset = '50px' data-description = project.text target = "_blank" rel="noopener") #{project.alt}
+//-         br
+
+
 mixin Works
-    each project in Projects
-        a.hovercontroll(href = project.link data-overlay = project.datasrc data-offset = '50px' data-description = project.text target = "_blank" rel="noopener") #{project.alt}
-        br
+    .projects-container
+        each project in Projects
+            a.hovercontroll(href = project.link data-overlay = project.datasrc data-offset = '50px' data-description = project.text target = "_blank" rel="noopener") #{project.alt}
+            br
+
+
+
+
+
 
 mixin Footer
     footer(id="footer")
