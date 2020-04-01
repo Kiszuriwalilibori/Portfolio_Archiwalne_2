@@ -194,32 +194,19 @@ nav {
   width: 100vh;
   height: $nav-height;
   top: 0;
-  padding-bottom: 1rem;
+  justify-content: space-evenly;
+  align-items:center;
+  //padding-bottom: 1rem;
   background-color: $nav-color;
     @include mobile{background:transparent;
       background:$nav-color;
       height: $nav-height-mobile;
       transform: rotate(90deg) translateX(-$nav-height-mobile);}
 
-  & article {
-    margin-top: $nav-top-margin;
-    margin-right: 20px;
-    margin-bottom: 0px;
-    margin-left: 10vh;
-    @include mobile {
-      margin-top: $nav-top-margin-mobile
-    }
-  }
  
 
 }
   
-
-#home{
-  margin: $nav-top-margin 0 0 1rem;
-  @include mobile{margin-top: $nav-top-margin-mobile;}
-  
-}
 
 #line{
 margin-right:  20px;
