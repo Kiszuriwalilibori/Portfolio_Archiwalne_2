@@ -123,7 +123,7 @@ a {
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
-  cursor: url("../project_images/cursor2.png"), default;
+  cursor: url("../project_images/cursoractive.png"), default;
 }
 
 a:focus, a:active {
@@ -294,6 +294,10 @@ nav {
     -webkit-transform: rotate(90deg) translateX(-50px);
             transform: rotate(90deg) translateX(-50px);
   }
+}
+
+nav article a {
+  padding: 20px 10px;
 }
 
 #line {

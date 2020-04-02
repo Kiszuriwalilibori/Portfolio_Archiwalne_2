@@ -54,7 +54,10 @@ It is - as title says - my Portfolio Page
 - buggy font declaration modified
 - neta name added
 
+#### 5
+- brand new layout
+
 
 ### To do
 
-- while it displays properly with Chrome, with Audits it makes problems to load styles
+- replace technology names with icons
