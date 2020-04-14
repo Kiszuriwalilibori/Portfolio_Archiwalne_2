@@ -93,4 +93,6 @@ document.addEventListener("DOMContentLoaded", function(){
   window.location.hash ='Home';
   sidekick('left','fancy-l');
   sidekick('right','fancy-r');
+
+
   });
