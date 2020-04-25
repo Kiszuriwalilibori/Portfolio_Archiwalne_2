@@ -10,6 +10,8 @@ mixin Head
         link(rel='stylesheet' href='./styles/style.css')
         link(rel="icon" href="./project_images/foto1.png")
         script(src='./scripts/main.js' defer)
+        //- script(src="https://code.jquery.com/jquery-3.1.0.js")
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js')
         title Piotr Maksymiuk portfolio
 
 mixin NavigationBar
@@ -42,8 +44,8 @@ mixin Works
 
 mixin Footer
     footer(id="footer")
-        a(id="facebook" href="https://www.facebook.com/piotr.maksymiuk.940") facebook
-        a(id="github" href="https://github.com/Kiszuriwalilibori") github
+        a.facebook(id="facebook" href="https://www.facebook.com/piotr.maksymiuk.940") facebook
+        a.github(id="github" href="https://github.com/Kiszuriwalilibori") github
 
 mixin About   
     #About.about
@@ -74,30 +76,34 @@ mixin Skills
             ul
                 li(class ='skill_r-gr')
                     p.right #{texts.skill1}
-                    p.left HTML
-                    p.left CSS, SCSS
-                    p.left JS
-                    p.left React.js
-                    p.left Redux
-                    p.left React-Router
-                    p.left Material UI
-                    p.left jQuery
+                    .skills
+                        img.left.short(src='./project_images/skills/html5.svg' alt ='html')
+                        img.left(src='./project_images/skills/css.png' alt ='css')
+                        img.left(src='./project_images/skills/sass.png' alt ='sass')
+                        img.left(src='./project_images/skills/js.png' alt ='java script')
+                        img.left(src='./project_images/skills/react.png' alt ='react')
+                        img.left(src='./project_images/skills/redux.png' alt ='redux')
+                        img.left(src='./project_images/skills/router.png' alt ='router')
+                        img.left(src='./project_images/skills/material.svg' alt ='material')
+                        img.left(src='./project_images/skills/jquery.png' alt ='jquery')
 
                 li(class ='skill_l-gr')
                     p.right #{texts.skill2}
-                    p.left Styled Components
-                    p.left Linux
-                    p.left Bootstrap
+                    .skills
+                        img.left(src='./project_images/skills/linux.png' alt ='linux')
+                        img.left(src='./project_images/skills/bootstrap.png' alt ='bootstrap')
+                        img.left(src='./project_images/skills/styled.png' alt ='styled components')
+                        img.left(src='./project_images/skills/redux.png' alt ='redux')
+                        img.left(src='./project_images/skills/pug.svg' alt ='pug')
 
                 li(class ='skill_r-gr')
                     p.right #{texts.skill3}
-                    p.left advanced node.js features
-                    p.left SQL
-                    p.left PHP
+                    .skills
+                        img.left(src='./project_images/skills/php.png' alt ='php')
+                        img.left(src='./project_images/skills/mysql.png' alt ='mysql')
 mixin Home
     #Home.home.r-gr
-        //- img.home__foto(alt = 'author foto' src ='./project_images/foto1.png')
-
+        img.home__foto(alt = 'author foto' src ='./project_images/foto2.png')
         p.left Piotr Maksymiuk
         p.right Web-Developer
         
@@ -111,7 +117,14 @@ mixin Projects
 doctype html
 html(lang ='en' ID ='HTML')
     +Head
+    canvas(ID='canvas')
     body
+        div(id="loader-wrapper")
+            .load
+                hr
+                hr
+                hr
+                hr
         +NavigationBar
         main
             +Projects

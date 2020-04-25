@@ -61,3 +61,8 @@ It is - as title says - my Portfolio Page
 ### To do
 
 - replace technology names with icons
+
+
+
+Uwaga - ostatnio zostało to wypchnięte na github portfolio a nie na github portfolio granim. Portfolio  ma ustawione github portfolio z automatu. Tutaj to jest w portfolio granim przepisałem ścieżkę rećcznie na taką
+https://github.com/Kiszuriwalilibori/portfolio.git

@@ -54,8 +54,6 @@
     }
   }
     
-    
-
 
 document.addEventListener("DOMContentLoaded", function(){
   if (!('ontouchstart' in document.documentElement)){
@@ -96,3 +94,65 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
   });
+
+  window.addEventListener("DOMContentLoaded", (event) => {
+    var granimInstance = new Granim({
+      element: 'canvas',
+      direction: 'top-bottom',
+      isPausedWhenNotInView: true,
+      image : {source:'https://raw.githubusercontent.com/Kiszuriwalilibori/portfolio_granim/master/project_images/moon.jpg',
+              blendingMode: 'multiply'
+      },
+      states : {
+          "default-state": {
+              gradients: [
+                  ['#29323c', '#485563'],
+                  ['#a35a00', '#556270'],
+                  ['#80d3fe', '#7ea0c4'],
+                  ['#f0ab51', '#eceba3']
+              ],
+              transitionSpeed: 7000
+          }
+      }
+  })
+  
+
+});
+window.addEventListener("load", (event) => {
+console.log('loaded');
+const x = document.getElementById('loader-wrapper');
+x.remove();})
+
+
+
+//żeby ta animka dobrze działała trza by wziąć oba elementy poza footer absolutnie
+
+
+// $(document).ready(function(){
+//   console.log('script');
+//   animateDiv('.facebook');
+//   animateDiv('.github');
+  
+// });
+
+// function makeNewPosition(){
+  
+//   // Get viewport dimensions (remove the dimension of the div)
+//   var h = $(window).height() - 50;
+//   var w = $(window).width() - 50;
+  
+//   var nh = Math.floor(Math.random() * h);
+//   var nw = Math.floor(Math.random() * w);
+  
+//   return [nh,nw];    
+  
+// }
+
+// function animateDiv(myclass){
+//   var newq = makeNewPosition();
+//   console.log('myclass',myclass);
+//   $(myclass).animate({ top: newq[0], left: newq[1] }, 10000,   function(){
+//     animateDiv(myclass);        
+//   });
+  
+// };
