@@ -9,8 +9,9 @@ mixin Head
         meta(http-equiv='X-UA-Compatible' content='ie=edge')
         link(rel='stylesheet' href='./styles/style.css')
         link(rel="icon" href="./project_images/foto1.png")
-        link(rel="preload" as="image" href='./project_images/foto1.png')
+        link(rel="preload" as="image" href='./project_images/foto1.png' crossorigin='anonymous')
         script(src='./scripts/main.js' defer)
+        link(rel="preload" as="font" href="/fonts/custom-font.woff2" type="font/woff2" crossorigin="anonymous")
         script(src='https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js' defer)
         link(rel="preload" as="image" href="https://raw.githubusercontent.com/Kiszuriwalilibori/portfolio_granim/master/project_images/moon.jpg")
         title Piotr Maksymiuk portfolio
