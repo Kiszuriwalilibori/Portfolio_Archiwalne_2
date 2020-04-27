@@ -119,7 +119,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 window.addEventListener("load", (event) => {
-console.log('loaded');
 const x = document.getElementById('loader-wrapper');
 x.remove();})
 
