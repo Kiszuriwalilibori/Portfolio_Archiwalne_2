@@ -124,7 +124,7 @@ x.remove();})
 
 
 
-//żeby ta animka dobrze działała trza by wziąć oba elementy poza footer absolutnie
+//żeby ta animka dobrze działała trza by wziąć oba elementy poza footer absolutnie animka sprawi że linki będą latać po ekranie
 
 
 // $(document).ready(function(){

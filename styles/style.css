@@ -86,6 +86,7 @@ input, textarea, select {
   src: url("./noto/notosanskr-regular-webfont.woff") format("woff");
   src: url("./noto/notosanskr-regular-webfont.woff2") format("woff2");
   src: url("./noto/NotoSans-Regular.ttf") format("truetype");
+  src: url("./noto/Noto-Sans-regular.woff") format("woff");
   font-weight: normal;
   font-display: swap;
   font-style: normal;
