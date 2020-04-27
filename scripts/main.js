@@ -42,7 +42,7 @@
     function handleIntersect ( entries, observer) {
       entries.forEach(function(entry) {
         if (entry.intersectionRatio > 0) {
-        entry.target.classList.add(className);
+        entry.target.classList.add(className);//tu ewentualnie mozna by dodać opóźnienie jakiś timeout czy co
         } else {
          entry.target.classList.remove(className);
          
