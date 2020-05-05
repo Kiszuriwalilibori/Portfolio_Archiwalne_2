@@ -47,14 +47,11 @@
          entry.target.classList.remove(className);
          
         }
-      
       }
-   
     ); 
     }
   }
     
-
 document.addEventListener("DOMContentLoaded", function(){
   if (!('ontouchstart' in document.documentElement)){
     var hoverControls = document.querySelectorAll(".hovercontroll");
@@ -111,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function(){
                   ['#80d3fe', '#7ea0c4'],
                   ['#f0ab51', '#eceba3']
               ],
-              transitionSpeed: 7000
+              transitionSpeed: 4000
           }
       }
   })
