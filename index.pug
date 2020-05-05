@@ -10,7 +10,7 @@ mixin Head
         link(rel='stylesheet' href='./styles/style.css')
         link(rel="icon" href="./project_images/foto1.png")
         script(src='./scripts/main.js' defer)
-        link(rel='preload' href='styles/noto/Noto-Sans-regular.woff' as='font' crossorigin='anonymous')
+        link(rel='preload' href='styles/noto/noto.woff' as='font' crossorigin='anonymous')
         link(rel='preload' href='styles/oregano/oregano-regularitalic-webfont.woff2' as='font' crossorigin='anonymous')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js' defer)
         link(rel="preload" as="image" href="https://raw.githubusercontent.com/Kiszuriwalilibori/portfolio_granim/master/project_images/moon.jpg")
@@ -27,21 +27,11 @@ mixin NavigationBar
         article#projects
             a(href='#Projects') projects
 
-//- mixin Works
-//-     each project in Projects
-//-         a.hovercontroll(href = project.link data-overlay = project.datasrc data-offset = '50px' data-description = project.text target = "_blank" rel="noopener") #{project.alt}
-//-         br
-
-
 mixin Works
     .projects-container
         each project in Projects
-            a.hovercontroll(href = project.link data-overlay = project.datasrc data-offset = '50px' data-description = project.text target = "_blank" rel="noopener") #{project.alt}
+            a.hovercontroll(href = project.link data-overlay = project.datasrc data-offset = '50px' data-description = project.description +". Technologie: " + project.text target = "_blank" rel="noopener") #{project.alt}
             br
-
-
-
-
 
 
 mixin Footer
