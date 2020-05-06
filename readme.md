@@ -60,7 +60,7 @@ It is - as title says - my Portfolio Page
 
 ### To do
 
-- replace technology names with icons
+- jquery inview and IE support
 
 
 
