@@ -6,7 +6,7 @@
   window.addEventListener("load", function(event) {
     
     boxElement = [...document.getElementsByClassName(element)];
-  
+      
     createObserver();
   }, false);
   
@@ -124,31 +124,31 @@ x.remove();})
 //żeby ta animka dobrze działała trza by wziąć oba elementy poza footer absolutnie animka sprawi że linki będą latać po ekranie
 
 
-// $(document).ready(function(){
-//   console.log('script');
-//   animateDiv('.facebook');
-//   animateDiv('.github');
+$(document).ready(function(){
+  console.log('script');
+ 
+  animateDiv('.ufo');
   
-// });
+});
 
-// function makeNewPosition(){
+function makeNewPosition(){
   
-//   // Get viewport dimensions (remove the dimension of the div)
-//   var h = $(window).height() - 50;
-//   var w = $(window).width() - 50;
+  // Get viewport dimensions (remove the dimension of the div)
+  var h = $(window).height() - 50;
+  var w = $(window).width() - 50;
   
-//   var nh = Math.floor(Math.random() * h);
-//   var nw = Math.floor(Math.random() * w);
+  var nh = Math.floor(Math.random() * h);
+  var nw = Math.floor(Math.random() * w);
   
-//   return [nh,nw];    
+  return [nh,nw];    
   
-// }
+}
 
-// function animateDiv(myclass){
-//   var newq = makeNewPosition();
-//   console.log('myclass',myclass);
-//   $(myclass).animate({ top: newq[0], left: newq[1] }, 10000,   function(){
-//     animateDiv(myclass);        
-//   });
+function animateDiv(myclass){
+  var newq = makeNewPosition();
+  console.log('myclass',myclass);
+  $(myclass).animate({ top: newq[0], left: newq[1] }, 10000,   function(){
+    animateDiv(myclass);        
+  });
   
-// };
+};

@@ -9,10 +9,12 @@ mixin Head
         meta(http-equiv='X-UA-Compatible' content='ie=edge')
         link(rel='stylesheet' href='./styles/style.css')
         link(rel="icon" href="./project_images/foto1.png")
+        script(src='./scripts/jquery.js')
         script(src='./scripts/main.js' defer)
         link(rel='preload' href='styles/noto/noto.woff' as='font' crossorigin='anonymous')
         link(rel='preload' href='styles/oregano/oregano-regularitalic-webfont.woff2' as='font' crossorigin='anonymous')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js' defer)
+        script(src='./scripts/modernizr-custom.js' defer)
         link(rel="preload" as="image" href="https://raw.githubusercontent.com/Kiszuriwalilibori/portfolio_granim/master/project_images/moon.jpg")
         title Piotr Maksymiuk portfolio
 
@@ -94,7 +96,7 @@ mixin Skills
                         img.skills_php(alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAA1AQMAAACN/txFAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFo2C4AwAC5gABAK7QwQAAAABJRU5ErkJggg==")
 mixin Home
     #Home.home.r-gr
-        img.home__foto(alt = 'author foto' src ='./project_images/foto2.png')
+        .author-foto
         p.left Piotr Maksymiuk
         p.right Web-Developer
         
@@ -110,6 +112,7 @@ html(lang ='en' ID ='HTML')
     +Head
     canvas(ID='canvas')
     body
+        .ufo
         div(id="loader-wrapper")
             .load
                 hr
