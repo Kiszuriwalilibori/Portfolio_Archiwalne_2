@@ -287,8 +287,15 @@ li :first-child {
   opacity: 0;
 }
 
+@media (max-width: 775px) {
+  .overlay img {
+    width: 100%;
+  }
+}
+
 .description {
   visibility: hidden;
+  padding: 0 2% 0 2%;
   position: fixed;
   width: 30vw;
   opacity: 0;
@@ -300,6 +307,7 @@ li :first-child {
   font-size: 2rem;
   text-align: center;
   pointer-events: none;
+  border: 2px solid gold;
 }
 
 @media (max-width: 775px) {
@@ -309,9 +317,12 @@ li :first-child {
     right: 0;
     width: 100%;
     height: 62.5vw;
+    font-size: 4vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border: none;
+    background-color: rgba(125, 125, 125, 0.8);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -426,6 +437,10 @@ nav article a {
 @media (max-width: 775px) {
   .home-page {
     font-size: calc(2vw + 3vh);
+    margin: 0 0 0 50px;
+    padding: 0 0 5px 0;
+    width: calc(100% - 50px);
+    border-width: unset;
     line-height: 1.3;
   }
 }
@@ -476,6 +491,7 @@ footer a:hover {
 @media (max-width: 775px) {
   .projects-container {
     padding-top: 62.5vw;
+    padding-left: 2%;
   }
 }
 
@@ -529,7 +545,8 @@ footer a:hover {
 
 @media (max-width: 775px) {
   .about p {
-    padding-left: 50px;
+    padding-left: calc(50px + 2%);
+    padding-right: 2%;
   }
 }
 

@@ -5,7 +5,7 @@ mixin Head
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
-        meta(name='Piotr Maksymiuk Portfolio')
+        meta(name='Piotr Maksymiuk Portfolio' description = 'Piotr Maksymiuk Portfolio' )
         meta(http-equiv='X-UA-Compatible' content='ie=edge')
         link(rel='stylesheet' href='./styles/style.css')
         link(rel="icon" href="./project_images/foto1.png")
@@ -103,7 +103,7 @@ mixin Home
 mixin Projects
     .home-page.r-gr(ID ="Projects")
         .overlay.frame(style='visibility: hidden;')
-            img(src ='blank_overlay.gif')
+            img(src ='blank_overlay.gif' alt='')
         .description
         +Works
         
