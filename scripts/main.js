@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function(){
       element: 'canvas',
       direction: 'top-bottom',
       isPausedWhenNotInView: true,
-      image : {source:'https://raw.githubusercontent.com/Kiszuriwalilibori/portfolio_granim/master/project_images/moon.jpg',
+      image : {source:'https://raw.githubusercontent.com/Kiszuriwalilibori/portfolio/master/project_images/moon.jpg',
               blendingMode: 'multiply'
       },
       states : {
