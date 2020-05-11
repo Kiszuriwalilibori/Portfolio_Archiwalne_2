@@ -84,11 +84,16 @@ document.addEventListener("DOMContentLoaded", function(){
         
       });
     }
+  } 
+  
+  
+  if (is_touch_device){
+    var projectsContainer = document.querySelector(".projects-container-left-padded");
+    projectsContainer.classList.remove("project-container-top-padded");
   }
   window.location.hash ='Home';
   sidekick('left','fancy-l');
   sidekick('right','fancy-r');
-
 
   });
 
@@ -119,11 +124,6 @@ window.addEventListener("load", (event) => {
 const x = document.getElementById('loader-wrapper');
 x.remove();})
 
-
-
-//żeby ta animka dobrze działała trza by wziąć oba elementy poza footer absolutnie animka sprawi że linki będą latać po ekranie
-
-
 $(document).ready(function(){
   console.log('script');
  
@@ -150,3 +150,14 @@ function animateDiv(myclass){
   });
   
 };
+
+
+function is_touch_device() {  
+  try {  
+    document.createEvent("TouchEvent");  
+    return true;  
+  } catch (e) {  
+    return false;  
+  }  
+} 
+

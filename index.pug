@@ -30,7 +30,7 @@ mixin NavigationBar
             a(href='#Projects') projects
 
 mixin Works
-    .projects-container
+    .projects-container-left-padded.projects-container-top-padded
         each project in Projects
             a.hovercontroll(href = project.link data-overlay = project.datasrc data-offset = '50px' data-description = project.description +". Technologie: " + project.text target = "_blank" rel="noopener") #{project.alt}
             br

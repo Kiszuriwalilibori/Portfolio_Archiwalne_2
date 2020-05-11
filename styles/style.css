@@ -500,6 +500,18 @@ footer a:hover {
   }
 }
 
+@media (max-width: 775px) {
+  .projects-container-left-padded {
+    padding-left: 2%;
+  }
+}
+
+@media (max-width: 775px) {
+  .projects-container-top-padded {
+    padding-top: 62.5vw;
+  }
+}
+
 #About, #Projects {
   -webkit-animation: fadein 0.3s ease-in-out forwards;
           animation: fadein 0.3s ease-in-out forwards;
