@@ -1,0 +1,27 @@
+
+nav {
+    transform-origin: bottom left;
+    transform: rotate(90deg) translateX(-$nav-height);
+    position: fixed;
+    display: flex;
+    width: 100vh;
+    height: $nav-height;
+    top: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+    background-color: $nav-color;
+
+    @include mobile {
+        background: transparent;
+        background: $nav-color;
+        height: $nav-height-mobile;
+        transform: rotate(90deg) translateX(-$nav-height-mobile);
+    }
+
+    ;
+
+    & article a {
+        padding: 20px 10px;
+    }
+}
