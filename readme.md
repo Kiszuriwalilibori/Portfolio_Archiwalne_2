@@ -60,7 +60,7 @@ It is - as title says - my Portfolio Page
 
 ### To do
 
-- jquery inview and IE support
+- jquery inview and IE support, smooth change of font size and few margins
 
 
 

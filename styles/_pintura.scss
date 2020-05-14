@@ -1,0 +1,105 @@
+.overlay {
+    visibility: hidden;
+    position: fixed;
+    width: 30vw;
+    opacity: 0;
+    transition: opacity 1s;
+    right: 3vw;
+    top: 3vw;
+    z-index: 0;
+    pointer-events: none;
+    
+  
+    @include mobile {
+      width: 100%;
+      top: 0;
+      right: 0;
+    }
+  }
+  
+  .overlay.overlay-visible {
+    opacity: 1;
+    
+  }
+  .overlay.overlay-hidden{
+    opacity: 0;
+  }
+  
+  .overlay img{@include mobile {
+    width: 100%;}}
+  
+  .description {
+    visibility: hidden;
+    padding: 0 2% 0 2%;
+    position: fixed;
+    width: 30vw;
+    opacity: 0;
+    transition: opacity 1s;
+    right: 3vw;
+    top: 24vw;
+    z-index: 0;
+    font-size:2rem;
+    text-align: center;
+    pointer-events: none;
+    color:#2C5F2D;
+    background-color:#97BC62FF;
+    border-radius:2px;
+    box-shadow: inset 0 0 10px #2C5F2D;
+                  
+  @include mobile {
+    z-index: 1000;
+    top:0;
+    right:0;
+    width:100%;
+    height:62.5vw;
+    font-size: 4vw;
+    display:flex;
+    border: none;
+    transition-delay: 3s;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  }
+  
+    .description.description-visible {
+      opacity: 1;
+    }
+    .description.description-hidden{
+      opacity: 0;
+    }
+  
+  .frame {
+    
+    border:solid 5vmin #eee;
+    border-bottom-color:#fff;
+    border-left-color:#eee;
+    border-radius:2px;
+    border-right-color:#eee;
+    border-top-color:#ddd;
+    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+    box-sizing:border-box;
+    
+  
+    &:before {
+      border-radius:2px;
+      bottom:-2vmin;
+      box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+      content:"";
+      left:-2vmin;
+      position:absolute;
+      right:-2vmin;
+      top:-2vmin;
+    }
+    &:after {
+      border-radius:2px;
+      bottom:-2.5vmin;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+      content:"";
+      left:-2.5vmin;
+      position:absolute;
+      right:-2.5vmin;
+      top:-2.5vmin;
+    }
+  }
+  

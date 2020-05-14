@@ -183,6 +183,24 @@ input, textarea, select {
   }
 }
 
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -272,8 +290,8 @@ footer {
   right: 20px;
   position: fixed;
   bottom: 20px;
-  color: #fff;
   text-align: center;
+  color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 
@@ -350,6 +368,22 @@ footer a:hover {
     font-size: 14px;
     padding: 5px 0 0 0;
     margin: 0;
+  }
+}
+
+#Skills:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#Skills li :first-child {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 775px) {
+  #Skills li :first-child {
+    font-size: 16px;
   }
 }
 
@@ -639,32 +673,6 @@ footer a:hover {
   background-image: url("../project_images/skills/skills.png");
 }
 
-.h-center {
-  text-align: center;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-}
-
-.flex-h-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-li :first-child {
-  font-size: 1.5rem;
-}
-
-@media (max-width: 775px) {
-  li :first-child {
-    font-size: 16px;
-  }
-}
-
 .overlay {
   visibility: hidden;
   position: fixed;
@@ -789,28 +797,22 @@ li :first-child {
   top: -2.5vmin;
 }
 
-#line {
-  margin-right: 20px;
-}
-
-.neon {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-}
-
-/* ===================== project links styles ============================= */
-.home-page {
+#Projects {
   margin: 0 0 0 85px;
   line-height: 1.2;
-  padding: 0 0 5px 50px;
+  padding: 60px 0 5px 50px;
   border-width: 100px;
   line-height: 1.6;
   min-height: 100vh;
+  -webkit-animation: fadein 1s ease-in-out forwards;
+          animation: fadein 1s ease-in-out forwards;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: opacity;
 }
 
 @media (max-width: 775px) {
-  .home-page {
+  #Projects {
     font-size: calc(2vw + 3vh);
     margin: 0 0 0 50px;
     padding: 0 0 5px 0;
@@ -820,7 +822,7 @@ li :first-child {
   }
 }
 
-.hovercontroll {
+#Projects a {
   font-size: 4vw;
 }
 
@@ -843,47 +845,25 @@ li :first-child {
   }
 }
 
-#About, #Projects {
-  -webkit-animation: fadein 0.3s ease-in-out forwards;
-          animation: fadein 0.3s ease-in-out forwards;
+#About {
+  -webkit-animation: fadein 1s ease-in-out forwards;
+          animation: fadein 1s ease-in-out forwards;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   will-change: opacity;
-}
-
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* =============================== responsive ==================================== */
-.about {
   letter-spacing: 1px;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-.about h3 {
+#About h3 {
   font-size: 4vw;
   line-height: 1.2;
   padding: 50px;
   text-align: center;
 }
 
-.about p {
+#About p {
   margin: 0 0 20px 8px;
   line-height: 1.2;
   padding: 1vh 10px 5px 150px;
@@ -892,67 +872,62 @@ li :first-child {
 }
 
 @media (max-width: 775px) {
-  .about p {
+  #About p {
     padding-left: calc(50px + 2%);
     padding-right: 2%;
   }
 }
 
-.about-links {
-  line-height: 1.8;
-  margin: 8px 0 10px 0;
-}
-
-.about a {
+#About a {
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   display: inline-block;
 }
 
-.about a:hover {
+#About a:hover {
   color: #9ec684;
 }
 
 @media (max-width: 775px) {
-  .about a {
+  #About a {
     font-size: 14px;
     padding: 5px 0 0 0;
     margin: 0;
   }
 }
 
-.column {
-  float: left;
-  width: 50%;
-  min-height: 100vh;
-}
-
-@media (max-width: 775px) {
-  .column {
-    width: 100%;
-  }
-}
-
-.column2 {
-  float: left;
-  width: 33.33%;
-}
-
-.full-column {
-  width: 100%;
-}
-
-.about:after {
+#About:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.home {
+.neon-centered {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+#Home {
   font-family: 'oreganoitalic';
   min-height: 100vh;
   font-size: calc(2vw + 4vh);
   font-weight: bold;
+}
+
+#Home p {
+  font-size: calc(2vw + 4vh);
+  margin-top: calc(2vw + 4vh);
+}
+
+@media (max-width: 775px) {
+  #Home p {
+    font-size: calc(2vw + 3vh);
+    margin-top: calc(2vw + 3vh);
+  }
+}
+
+.home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -966,49 +941,6 @@ li :first-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.home p {
-  font-size: calc(2vw + 4vh);
-  margin-top: calc(2vw + 4vh);
-}
-
-@media (max-width: 775px) {
-  .home p {
-    font-size: calc(2vw + 3vh);
-    margin-top: calc(2vw + 3vh);
-  }
-}
-
-.home__foto {
-  position: relative;
-}
-
-@media (min-width: 776px) {
-  .home__foto {
-    display: block;
-    height: auto;
-    margin: 1vh 0 1vh 0;
-    position: absolute;
-    top: 1vw;
-    left: calc( 120px + 1vw);
-  }
-}
-
-@media screen and (max-width: 775px) {
-  .column2 {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 422px) {
-  p {
-    font-size: 14px;
-    line-height: 1;
-  }
-  .about a {
-    font-size: 14px;
-  }
 }
 
 .author-foto {
@@ -1034,6 +966,30 @@ li :first-child {
   background-image: url("../project_images/foto2.png");
 }
 
+.column {
+  float: left;
+  width: 50%;
+  min-height: 100vh;
+}
+
+@media (max-width: 775px) {
+  .column {
+    width: 100%;
+    min-height: unset;
+  }
+}
+
+.full-column {
+  width: 100%;
+}
+
+@media screen and (max-width: 422px) {
+  p {
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+
 .left {
   pointer-events: none;
   -webkit-transform: translateZ(0);
@@ -1046,7 +1002,6 @@ li :first-child {
           transform: translateZ(0);
 }
 
-/* ================================== PROJECT STYLES ============================= */
 .fancy-l {
   -webkit-animation: fancy-l 0.9s ease-out;
           animation: fancy-l 0.9s ease-out;

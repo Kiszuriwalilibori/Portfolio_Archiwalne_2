@@ -8,269 +8,29 @@
 @import './nav';
 @import './footer';
 @import './skills';
-
-.h-center{
-    text-align:center;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-}
-.flex-h-center{display:flex; justify-content: center}
-
-li :first-child{ font-size: 1.5rem;@include mobile{font-size: 16px;}}
-.overlay {
-  visibility: hidden;
-  position: fixed;
-  width: 30vw;
-  opacity: 0;
-  transition: opacity 1s;
-  right: 3vw;
-  top: 3vw;
-  z-index: 0;
-  pointer-events: none;
-  
-
-  @include mobile {
-    width: 100%;
-    top: 0;
-    right: 0;
-  }
-}
-
-.overlay.overlay-visible {
-  opacity: 1;
-  
-}
-.overlay.overlay-hidden{
-  opacity: 0;
-}
-
-.overlay img{@include mobile {
-  width: 100%;}}
-
-.description {
-  visibility: hidden;
-  padding: 0 2% 0 2%;
-  position: fixed;
-  width: 30vw;
-  opacity: 0;
-  transition: opacity 1s;
-  right: 3vw;
-  top: 24vw;
-  z-index: 0;
-  font-size:2rem;
-  text-align: center;
-  pointer-events: none;
-  color:#2C5F2D;
-  background-color:#97BC62FF;
-  border-radius:2px;
-  box-shadow: inset 0 0 10px #2C5F2D;
-                
-@include mobile {
-  z-index: 1000;
-  top:0;
-  right:0;
-  width:100%;
-  height:62.5vw;
-  font-size: 4vw;
-  display:flex;
-  border: none;
-  transition-delay: 3s;
-  justify-content:center;
-  align-items:center;
-}
-
-}
-
-  .description.description-visible {
-    opacity: 1;
-  }
-  .description.description-hidden{
-    opacity: 0;
-  }
-
-.frame {
-  
-  border:solid 5vmin #eee;
-  border-bottom-color:#fff;
-  border-left-color:#eee;
-  border-radius:2px;
-  border-right-color:#eee;
-  border-top-color:#ddd;
-  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
-  box-sizing:border-box;
-  
-
-  &:before {
-    border-radius:2px;
-    bottom:-2vmin;
-    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
-    content:"";
-    left:-2vmin;
-    position:absolute;
-    right:-2vmin;
-    top:-2vmin;
-  }
-  &:after {
-    border-radius:2px;
-    bottom:-2.5vmin;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
-    content:"";
-    left:-2.5vmin;
-    position:absolute;
-    right:-2.5vmin;
-    top:-2.5vmin;
-  }
-}
-
-#line{
-margin-right:  20px;
-
-}
-
-.neon{
-color: #fff;
-    text-align: center;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;}
-
-
-
-
-
-/* ===================== project links styles ============================= */
-.home-page {
-  margin: 0 0 0 $nav-top-margin;
-  line-height: 1.2;
-  padding: 0 0 5px 50px;
-  border-width: 100px;
-  line-height: 1.6;
-  min-height: 100vh;
-  @include mobile
-  {font-size: calc(2vw + 3vh);
-    margin: 0 0 0 50px;
-    padding: 0 0 5px 0;
-    width: calc(100% - 50px);
-    border-width: unset;
-    line-height: 1.3; }
-}
-
-.hovercontroll{font-size: 4vw;}
-
-.projects-container{
-  @include mobile{padding-top: 62.5vw;padding-left: 2%;}
-}
-.projects-container-left-padded{
-  @include mobile{padding-left: 2%;}
-}
-.projects-container-top-padded{
-  @include mobile{padding-top: 62.5vw;}
-}
-#About,#Projects{
-  animation: fadein 0.3s ease-in-out forwards;
-  transform:translateZ(0);
-  will-change:opacity;
-}
-@keyframes fadein {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-/* =============================== responsive ==================================== */
-
-.about {letter-spacing: 1px; min-height: 100vh;overflow-x: hidden;}
-
-.about h3 {
-  font-size: 4vw;
-  line-height: 1.2;
-  padding: 50px;
-  text-align:center;
-}
-
-.about p {
-  margin: 0 0 20px 8px;
-  line-height: 1.2;
-  padding: 1vh 10px 5px 150px;
- 	border-width: 100px;
-  font-weight: 100;
-  @include mobile { padding-left: calc(50px + 2%); padding-right: 2%;}
-}
-
-.about-links {
-  line-height: 1.8;
-  margin: 8px 0 10px 0;
-}
-
-.about a {
-  
-  transition: color 0.5s;
-  display: inline-block;
-  &:hover{color: $link}
-  @include mobile {
-      
-    font-size: 14px;
-    padding: 5px 0 0 0;
-    margin:0 ;
-  }
-}
+@import './pintura';
+@import './projects';
+@import './about';
+@import './home';
 
 .column {
     float: left;
     width: 50%;
     min-height:100vh;
-    @include mobile  {width: 100%;}
+    @include mobile  {width: 100%; min-height: unset;}
 }
 
-.column2 {
-    float: left;
-    width: 33.33%;
-}
 .full-column{ width: 100%;}
-
-.about:after {
-    content:"";
-    display: table;
-    clear: both;
-  
-}
-
-.home {
-  font-family: 'oreganoitalic';
-  min-height: 100vh;
-  font-size: calc(2vw + 4vh);
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  & p {
-    font-size: calc(2vw + 4vh);
-    margin-top: calc(2vw + 4vh);
-
-    @include mobile {
-      font-size: calc(2vw + 3vh);
-      margin-top: calc(2vw + 3vh)
-    }
-  }
-}
-.home__foto{
-  position:relative; 
-  @include above-mobile {display:block;
-  height: auto;
-  margin: 1vh 0 1vh 0;
-  position: absolute;
-  top:1vw;
-  left: calc( #{$nav-height} + 1vw);}
- 
-  }
     
-  @media screen and (max-width: 775px) {
+//   @media screen and (max-width: 775px) {
         
-    .column2 {
-        width: 100%;
-    }
+//     .column2 {
+//         width: 100%;
+//     }
     
-} 
+// } 
+
+
 
   @media screen and (max-width: 422px) {
     p{
@@ -278,28 +38,13 @@ color: #fff;
       line-height: 1; 
     }
       
-    .about a {
-      font-size: 14px;
-    }
+    // .about a {
+    //   font-size: 14px;
+    // }
 } 
-.author-foto{
-  position:relative;
-  width:30px;
-  height:42px; 
-  @include above-mobile {
-	margin: 1vh 0 1vh 0;
-	position: absolute;
-	top: 1vw;
-  left: calc( 120px + 1vw);
-  }
-}
-.webp .author-foto{background-image:  url("../project_images/foto2.webp");}
-.no-webp .author-foto{background-image:  url("../project_images/foto2.png");}
 
 .left{pointer-events:none;transform:translateZ(0);}
 .right{pointer-events:none;transform:translateZ(0);}
-/* ================================== PROJECT STYLES ============================= */
-
 .fancy-l {
   animation: fancy-l 0.9s ease-out;
   will-change: transform, opacity;

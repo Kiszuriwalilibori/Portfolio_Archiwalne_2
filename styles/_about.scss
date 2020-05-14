@@ -1,0 +1,8 @@
+#About{
+    @include fadein;
+    @include about;
+}
+
+.neon-centered{
+    @include neon;
+}

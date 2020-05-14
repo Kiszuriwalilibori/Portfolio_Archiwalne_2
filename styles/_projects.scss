@@ -1,0 +1,41 @@
+#Projects {
+    margin: 0 0 0 $nav-top-margin;
+    line-height: 1.2;
+    padding: 60px 0 5px 50px;
+    border-width: 100px;
+    line-height: 1.6;
+    min-height: 100vh;
+    @include fadein;
+
+    @include mobile {
+        font-size: calc(2vw + 3vh);
+        margin: 0 0 0 50px;
+        padding: 0 0 5px 0;
+        width: calc(100% - 50px);
+        border-width: unset;
+        line-height: 1.3;
+    }
+
+    a {
+        font-size: 4vw;
+    }
+}
+
+.projects-container {
+    @include mobile {
+        padding-top: 62.5vw;
+        padding-left: 2%;
+    }
+}
+
+.projects-container-left-padded {
+    @include mobile {
+        padding-left: 2%;
+    }
+}
+
+.projects-container-top-padded {
+    @include mobile {
+        padding-top: 62.5vw;
+    }
+}

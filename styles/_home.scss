@@ -1,0 +1,42 @@
+#Home{
+
+  font-family: 'oreganoitalic';
+  min-height: 100vh;
+  font-size: calc(2vw + 4vh);
+  font-weight: bold;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+
+  & p {
+    font-size: calc(2vw + 4vh);
+    margin-top: calc(2vw + 4vh);
+
+    @include mobile {
+      font-size: calc(2vw + 3vh);
+      margin-top: calc(2vw + 3vh)
+    }
+  }
+}
+
+.home{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.author-foto{
+    position:relative;
+    width:30px;
+    height:42px; 
+    @include above-mobile {
+      margin: 1vh 0 1vh 0;
+      position: absolute;
+      top: 1vw;
+    left: calc( 120px + 1vw);
+    }
+  }
+
+.webp .author-foto{background-image:  url("../project_images/foto2.webp");}
+.no-webp .author-foto{background-image:  url("../project_images/foto2.png");}

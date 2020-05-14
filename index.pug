@@ -32,7 +32,7 @@ mixin NavigationBar
 mixin Works
     .projects-container-left-padded.projects-container-top-padded
         each project in Projects
-            a.hovercontroll(href = project.link data-overlay = project.datasrc data-offset = '50px' data-description = project.description +". Technologie: " + project.text target = "_blank" rel="noopener") #{project.alt}
+            a.hover_controller(href = project.link data-overlay = project.datasrc data-offset = '50px' data-description = project.description +". Technologie: " + project.text target = "_blank" rel="noopener") #{project.alt}
             br
 
 
@@ -42,7 +42,7 @@ mixin Footer
         a.github(id="github" href="https://github.com/Kiszuriwalilibori") github
 
 mixin About   
-    #About.about
+    #About
         .column.r-gr
             h3 About
             p #{texts.about1}
@@ -54,18 +54,18 @@ mixin About
                 a(href="mailto:piotrmaksymiuk@yahoo.com.com") #{texts.contact2}
             p #{texts.contact4} 
             p #{texts.contact5}   
-            p.h-center #{texts.contact3}
+            p.neon-centered #{texts.contact3}
             
-            p.h-center
+            p.neon-centered
                 a(href="https://www.facebook.com/piotr.maksymiuk.940") facebook
-            p.h-center
+            p.neon-centered
                 a(href="mailto:piotrmaksymiuk@yahoo.com.com") mail
-            p.h-center
+            p.neon-centered
                 a(href="https://github.com/Kiszuriwalilibori") Git Hub    
 
 mixin Skills
     #Skills
-        .column(class ='full-column')
+        .column.full-column
             h3 Skills
             ul
                 li
@@ -101,7 +101,7 @@ mixin Home
         p.right Web-Developer
         
 mixin Projects
-    .home-page.r-gr(ID ="Projects")
+    #Projects.r-gr
         .overlay.frame(style='visibility: hidden;')
             img(src ='blank_overlay.gif' alt='')
         .description

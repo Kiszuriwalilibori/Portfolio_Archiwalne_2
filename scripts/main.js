@@ -54,7 +54,7 @@
     
 document.addEventListener("DOMContentLoaded", function(){
   if (!('ontouchstart' in document.documentElement)){
-    var hoverControls = document.querySelectorAll(".hovercontroll");
+    var hoverControls = document.querySelectorAll(".hover_controller");
     var overlay = document.querySelector(".overlay");
     var overlayImage = overlay.querySelector("img");
     var description = document.querySelector('.description');
@@ -124,12 +124,7 @@ window.addEventListener("load", (event) => {
 const x = document.getElementById('loader-wrapper');
 x.remove();})
 
-$(document).ready(function(){
-  console.log('script');
- 
-  animateDiv('.ufo');
-  
-});
+$(document).ready(function(){animateDiv('.ufo');});
 
 function makeNewPosition(){
   
