@@ -55,13 +55,16 @@ mixin About
             p #{texts.contact4} 
             p #{texts.contact5}   
             p.neon-centered #{texts.contact3}
-            
-            p.neon-centered
-                a(href="https://www.facebook.com/piotr.maksymiuk.940") facebook
-            p.neon-centered
-                a(href="mailto:piotrmaksymiuk@yahoo.com.com") mail
-            p.neon-centered
-                a(href="https://github.com/Kiszuriwalilibori") Git Hub    
+            .contact_wrapper
+                span.neon-centered
+                    a(href="https://www.facebook.com/piotr.maksymiuk.940")
+                        img(src='./project_images/icons/fb.png')
+                span.neon-centered
+                    a(href="mailto:piotrmaksymiuk@yahoo.com.com")
+                        img(src='./project_images/icons/mail.png')
+                span.neon-centered
+                    a(href="https://github.com/Kiszuriwalilibori")
+                        img(src='./project_images/icons/github.png')
 
 mixin Skills
     #Skills

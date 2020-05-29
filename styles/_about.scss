@@ -6,3 +6,5 @@
 .neon-centered{
     @include neon;
 }
+.contact_wrapper{display:flex; justify-content:center; align-items:center;padding-left:150px;
+@include mobile{padding-left:0; padding-left: calc(50px + 2%)}}
