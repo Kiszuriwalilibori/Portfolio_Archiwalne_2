@@ -62,7 +62,3 @@ It is - as title says - my Portfolio Page
 
 - jquery inview and IE support, smooth change of font size and few margins
 
-
-
-Uwaga - ostatnio zostało to wypchnięte na github portfolio a nie na github portfolio granim. Portfolio  ma ustawione github portfolio z automatu. Tutaj to jest w portfolio granim przepisałem ścieżkę rećcznie na taką
-https://github.com/Kiszuriwalilibori/portfolio.git
