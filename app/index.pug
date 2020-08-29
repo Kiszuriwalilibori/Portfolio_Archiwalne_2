@@ -1,20 +1,21 @@
 include pug_variables.pug
 
-
 mixin Head
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
         meta(name='Piotr Maksymiuk Portfolio' description = 'Piotr Maksymiuk Portfolio' )
         meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        meta(property='og:title' content='Piotr Maksymiuk - Portfolio Archival2')
+        meta(property='og:type' content='Portfolio')
+        meta(property='og:url' content='https://kiszuriwalilibori.github.io/Portfolio_Archiwalne_2/#Home')
         link(rel='stylesheet' href='./styles/style.css')
         link(rel="icon" href="./project_images/foto1.png")
-        script(src='./scripts/jquery.js')
-        script(src='./scripts/main.js' defer)
+        script(src='./js/bundle.js' defer)
         link(rel='preload' href='styles/noto/noto.woff' as='font' crossorigin='anonymous')
         link(rel='preload' href='styles/oregano/oregano-regularitalic-webfont.woff2' as='font' crossorigin='anonymous')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js' defer)
-        script(src='./scripts/modernizr-custom.js' defer)
+        script(src='./js/modernizr-custom.js' defer)
         link(rel="preload" as="image" href="https://raw.githubusercontent.com/Kiszuriwalilibori/Portfolio_Archiwalne_2/master/project_images/moon.jpg")
         title Piotr Maksymiuk portfolio archiwalne
 

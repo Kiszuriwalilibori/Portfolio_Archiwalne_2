@@ -57,8 +57,14 @@ It is - as title says - my Portfolio Page
 #### 5
 - brand new layout
 
+#### 5
+- modular js
+
 
 ### To do
 
-- jquery inview and IE support, smooth change of font size and few margins
+- jquery inview and IE support, smooth change of font size and few margin
+- prepareAnimation sometimes it throws UFO out what makes horizontal 
+- more error control in js
 
+watchify app/js/main.js -o app/js/bundle.js -v
