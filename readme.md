@@ -66,5 +66,6 @@ It is - as title says - my Portfolio Page
 - jquery inview and IE support, smooth change of font size and few margin
 - prepareAnimation sometimes it throws UFO out what makes horizontal 
 - more error control in js
+- moon jpg to moon.webp
 
 watchify app/js/main.js -o app/js/bundle.js -v
