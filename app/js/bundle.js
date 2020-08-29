@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     element: "canvas",
     direction: "top-bottom",
     isPausedWhenNotInView: true,
-    image: { source: "https://raw.githubusercontent.com/Kiszuriwalilibori/Portfolio_Archiwalne_2/master/project_images/moon.jpg", blendingMode: "multiply" },
+    image: { source: "https://raw.githubusercontent.com/Kiszuriwalilibori/Portfolio_Archiwalne_2/master/docs/project_images/moon.jpg", blendingMode: "multiply" },
     states: {
       "default-state": {
         gradients: [
